@@ -18,8 +18,12 @@ DATA:
 The data is scraped using Selenium Webdriver from the Department of Commerce, Government of India. The data is stored in two files export.csv, which contains export data from 2010-2022(April) and import.csv, which contains import data from 2010-2022; the data size is 138714 for export and 77616 for import, respectively. The variables include HSCode, Commodity, value, country and year.
 
 • Value: values for export and import of commodities in million US $.
+
 • Export: Exports are the goods and services produced in one country and purchased by residents of another
-country.
+country
+
 • Import: Imports are foreign goods and services bought by residents of a country. Residents include citizens, businesses, and the government.
+
 • Country: Country Imported From/ Exported To
+
 • Year: Year in which commodities where Imported/Exported which is in between 2010 to 2022.
