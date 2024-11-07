@@ -1,29 +1,125 @@
-# Exploratory-Analysis-of-Indian-Foreign-Trade
+# 📊 Exploratory Analysis of Indian Foreign Trade (2010 - 2022)
 
-INTRO: 
-In the last two decades, Exports and Imports are playing a significant role in the Indian economy, and also India is playing a pivotal role in the international economy. This aim of the report is to analyze the growth of Exports, Imports and Trade Balance from 2010-to 2022 in India. This study also focus on India's performance in global trade and examines India's exports and imports by destination for 2,4,6,8 digits HS code level commodities during 2010-2022. This report tries to analyze the exports, imports growth, and balance of payments that have contributed to the Indian economy—this paper mainly concentrates on the period of 2010 - 2022 exports and imports and their growth in India. The report aims to highlight the significant countries playing a role in India's foreign trade, major continents and major commodities playing a role in India's exports and imports.
+This project aims to analyze the trends and structure of India’s foreign trade from 2010 to 2022. Over the past two decades, exports and imports have played a crucial role in India's economy, reflecting the country’s increasing significance in the global market. This analysis delves into India's exports and imports by examining trade balance trends, major trading partners, key commodities, and changes in trade composition over time.
 
-OBJECTIVE: 
-The main purpose of the present study is to examine the trends in India's exports and imports in terms of value and to analyze the structural changes in the composition of India's exports and imports using exploratory data analysis methods.
-Following are the key objectives of conducting this study:
-• To examine the growth of India’s exports, imports and trade balance.
-• To examine the principal commodities of India’s exports and imports.
-• To study on top exports and imports by country wise.
-• What products does India makes a profit from importing and exporting
-• Which country is important to India for export and import.
-• Which value of the commodity is increased or decreased by year.
-• Trends in India's Foreign trade.
+---
 
-DATA: 
-The data is scraped using Selenium Webdriver from the Department of Commerce, Government of India. The data is stored in two files export.csv, which contains export data from 2010-2022(April) and import.csv, which contains import data from 2010-2022; the data size is 138714 for export and 77616 for import, respectively. The variables include HSCode, Commodity, value, country and year.
+## 🏆 Objectives of the Study
 
-• Value: values for export and import of commodities in million US $.
+The main objectives of this study are to:
+1. **Analyze the Growth of Exports, Imports, and Trade Balance**: Explore how India’s trade balance has evolved over the years.
+2. **Identify Principal Commodities**: Discover key commodities that India exports and imports, with details down to 2, 4, 6, and 8-digit HS code levels.
+3. **Examine Country-wise Trade Patterns**: Identify top countries for imports and exports, and understand their importance to India’s trade.
+4. **Evaluate Profit-making Commodities**: Assess which commodities contribute positively to India’s trade balance.
+5. **Track Value Trends Over Time**: Analyze commodities whose trade value has increased or decreased over the years.
 
-• Export: Exports are the goods and services produced in one country and purchased by residents of another
-country
+---
 
-• Import: Imports are foreign goods and services bought by residents of a country. Residents include citizens, businesses, and the government.
+## 📄 About the Dataset
 
-• Country: Country Imported From/ Exported To
+The dataset was scraped using **Selenium WebDriver** from the Department of Commerce, Government of India. It consists of two files:
 
-• Year: Year in which commodities where Imported/Exported which is in between 2010 to 2022.
+1. **export.csv**: Contains export data from 2010 to 2022 (up to April 2022).
+2. **import.csv**: Contains import data for the same period.
+
+**Dataset Summary**:
+- **Export Data**: 138,714 records
+- **Import Data**: 77,616 records
+
+### Columns in the Dataset
+
+- **HSCode**: Harmonized System code for commodities.
+- **Commodity**: The specific commodity traded.
+- **Value**: Value of exports or imports in million US dollars.
+- **Country**: Country exported to (for exports) or imported from (for imports).
+- **Year**: Year of the trade, ranging from 2010 to 2022.
+
+---
+
+## 🔍 Exploratory Data Analysis (EDA)
+
+This analysis examines:
+- **Total Exports, Imports, and Trade Balance Trends**: Visualize the year-on-year growth in exports, imports, and India’s trade balance.
+- **Major Commodities in Trade**: Identify and visualize top commodities in terms of trade value and volume, along with their growth trends.
+- **Key Trading Partners**: Analyze top countries that contribute to India’s trade, highlighting shifts over time.
+- **Profitability by Commodity**: Identify commodities with the highest net exports (exports - imports), as well as those that may need attention due to high net imports.
+
+---
+
+## 📈 Analysis & Insights
+
+This project aims to highlight:
+1. **Growth Trends**: Identify significant growth patterns in exports, imports, and the trade balance.
+2. **Key Commodities and Partners**: Uncover the most significant commodities and countries in India’s foreign trade.
+3. **Economic Indicators**: Explore data that offers insights into India's economic health and dependencies in international trade.
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/Exploratory-Analysis-of-Indian-Foreign-Trade.git
+cd Exploratory-Analysis-of-Indian-Foreign-Trade
+```
+
+### 2. Install Dependencies
+
+Install the necessary libraries listed in `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Load the Data
+
+Make sure `export.csv` and `import.csv` are in the `/data` directory in your project root. These files contain the trade data for analysis.
+
+---
+
+## 🖥️ Usage
+
+Run the analysis script to generate insights and visualizations:
+
+```bash
+python src/analysis.py
+```
+
+### Key Scripts and Files
+
+- **src/analysis.py**: Main script for running the analysis.
+- **data/**: Folder containing `export.csv` and `import.csv`.
+- **notebooks/**: Jupyter notebooks for exploratory data analysis and visualization.
+
+---
+
+## 📊 Visualizations
+
+Some of the visualizations you can expect from this analysis:
+1. **Yearly Growth of Exports and Imports**: Line charts showing trends from 2010 to 2022.
+2. **Top Trading Partners**: Bar charts for countries that contribute most to India’s imports and exports.
+3. **Major Commodities by Trade Value**: Detailed analysis of top commodities.
+4. **Trade Balance Analysis**: Visualization of net exports and imports by commodity type.
+5. **Commodity Value Trends**: Heatmaps showing commodities with increased or decreased trade value over the years.
+
+---
+
+## 📝 Conclusion
+
+The analysis will provide valuable insights into:
+- India’s overall trade growth and balance trends.
+- Structural changes in the composition of trade.
+- Key commodities and countries contributing to India’s economic landscape.
+- Insights into trade profitability and dependencies on specific trading partners.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here’s how you can help:
+1. Fork the repository.
+2. Create a new branch with your feature (`git checkout -b feature-name`).
+3. Commit your changes and submit a pull request.
+
+---
